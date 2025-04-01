@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official landing page of the Blue Black Team. Showcasing projects, team members, and contact details.">
+    <title>Blue Black Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+        .logo span {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00f;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+        .hero {
+            padding: 100px 20px;
+            background: linear-gradient(to right, #000, #001f3f);
+        }
+        .hero img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .cta-button {
+            background-color: #00f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .project-grid, .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .project, .team-member {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 8px;
+            width: 250px;
+        }
+        .project img, .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: auto;
+        }
+        .contact form input, .contact form textarea, .contact form button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px;
+        }
+        .social-links img {
+            width: 30px;
+            height: auto;
+        }
+        footer {
+            padding: 20px;
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Blue Black Team Logo">
+            <span>Blue Black Team</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <img src="home.jpg" alt="Hero Image">
+        <h1>Innovating for a Better Tomorrow</h1>
+        <p>Welcome to the Blue Black Team, where creativity meets technology.</p>
+        <a href="#about" class="cta-button">Learn More</a>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a passionate team dedicated to developing innovative solutions and impactful projects. Our mission is to bridge technology and creativity to solve real-world problems, making a positive impact on businesses and communities. We value teamwork, integrity, and continuous learning, striving to push the boundaries of what’s possible.</p>
+        <p>Through our projects, we aim to enhance user experiences, streamline processes, and build a sustainable future. Join us on this journey as we innovate, create, and inspire.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="smart-health.jpg" alt="Project 1">
+                <h3>Smart Health App</h3>
+                <p>A digital healthcare solution improving patient-therapist interactions.</p>
+            </div>
+            <div class="project">
+                <img src="ai-chat.jpg" alt="Project 2">
+                <h3>AI Chatbot</h3>
+                <p>An intelligent chatbot for mental health support and guidance.</p>
+            </div>
+            <div class="project">
+                <img src="e-learning.jpg" alt="Project 3">
+                <h3>E-Learning Platform</h3>
+                <p>An interactive platform enhancing online learning experiences.</p>
+            </div>
+        </div>
+        <a href="#" class="cta-button">View All Projects</a>
+    </section>
+    
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="John Doe.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>CEO & Founder</p>
+                <p>John has a passion for technology and innovation. With over 15 years of experience in the tech industry, he leads the Blue Black Team with a vision for creating impactful solutions.</p>
+            </div>
+            <div class="team-member">
+                <img src="Jane Smith.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>CTO</p>
+                <p>Jane is an expert in artificial intelligence and software development. She oversees the technical aspects of all projects, ensuring top-notch execution and cutting-edge technology.</p>
+            </div>
+            <div class="team-member">
+                <img src="Michael Johnson.jpg" alt="Team Member 3">
+                <h3>Michael Johnson</h3>
+                <p>Product Manager</p>
+                <p>With a keen eye for market trends, Michael ensures that all projects align with user needs and business goals. His expertise in product development is crucial to the team’s success.</p>
+            </div>
+            <div class="team-member">
+                <img src="Emily Davis.jpg" alt="Team Member 4">
+                <h3>Emily Davis</h3>
+                <p>Lead Developer</p>
+                <p>Emily is a full-stack developer with a focus on user-centered design. She leads the development team in building responsive, high-quality digital solutions.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank"><img src="Twitter-icon.png" alt="Twitter"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram-icon.jpg" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2025 Blue Black Team. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
